@@ -1,5 +1,7 @@
 # Database "Employees"
 
+Requirements: Microsoft SQL Server 2017 or later
+
 Subject area: Human Resources (contingent of employees).
 
 The main substantive-significant essence: Employees, Subdivisions.
