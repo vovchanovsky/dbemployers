@@ -1,0 +1,47 @@
+use lab1
+
+CREATE TABLE DepartmentsType( 
+	IDType INT IDENTITY PRIMARY KEY,
+	NameType VARCHAR(50) NOT NULL UNIQUE,
+);
+
+CREATE TABLE Departments(
+	IDDepartment INT IDENTITY PRIMARY KEY,
+	TypeDepartment INT NOT NULL,
+	NameDepartment VARCHAR(50) NOT NULL UNIQUE,
+	CONSTRAINT TypesOfDepartments FOREIGN KEY (TypeDepartment) REFERENCES DepartmentsType (IDType) ON DELETE CASCADE,
+);
+
+CREATE TABLE Staff
+(
+	IDStaff INT IDENTITY PRIMARY KEY,
+	NameStaff VARCHAR(50) NOT NULL UNIQUE,
+);
+
+CREATE TABLE Occupations
+(
+	IDOccupation INT IDENTITY PRIMARY KEY,
+	NameOccupation VARCHAR(50) NOT NULL UNIQUE,
+);
+
+CREATE TABLE Employers(
+	IDRecord INT IDENTITY PRIMARY KEY,
+	Surname VARCHAR(50) NOT NULL,
+	Firstname VARCHAR(50) NOT NULL,
+	Patronic VARCHAR(50) ,
+	Sex CHAR(1),
+	BirthDate DATE NOT NULL,
+	Registrtation VARCHAR(100),
+	Department INT NOT NULL,
+	Occupation INT NOT NULL,
+	Staff INT NOT NULL,
+	EntryDate DATE NOT NULL,
+	ReleaseDate DATE,
+	CONSTRAINT DepartmentCHK FOREIGN KEY (Department) REFERENCES Departments (IDDepartment) ON DELETE CASCADE,
+	CONSTRAINT OccupationCHK FOREIGN KEY (Occupation) REFERENCES Occupations (IDOccupation) ON DELETE CASCADE,
+	CONSTRAINT StaffCHK FOREIGN KEY (Staff) REFERENCES Staff (IDStaff) ON DELETE CASCADE,
+	CONSTRAINT SexCHK CHECK (Sex IN ('M', 'F')),
+	CONSTRAINT BirthCHK CHECK (BirthDate<=GetDate()),
+);
+
+

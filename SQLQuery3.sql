@@ -1,0 +1,43 @@
+use lab1
+/*
+INSERT INTO Staff(NameStaff) VALUES ('Професорсько-викладацький склад')
+INSERT INTO Staff(NameStaff) VALUES ('Навчально-допоміжний склад')
+INSERT INTO Staff(NameStaff) VALUES ('Адміністративно-господарський склад')
+
+INSERT INTO DepartmentsType(NameType) VALUES('інститут')
+INSERT INTO DepartmentsType(NameType) VALUES('факультет')
+INSERT INTO DepartmentsType(NameType) VALUES('департамент')
+
+INSERT INTO Departments(NameDepartment, TypeDepartment) VALUES ('Департамент перспективного розвитку', '3')
+INSERT INTO Departments(NameDepartment, TypeDepartment) VALUES ('Департамент навчально-виховної роботи', '3')
+INSERT INTO Departments(NameDepartment, TypeDepartment) VALUES ('Фізико-технічний інститут', '1')
+INSERT INTO Departments(NameDepartment, TypeDepartment) VALUES ('Інститут прикладного системного аналізу', '1')
+INSERT INTO Departments(NameDepartment, TypeDepartment) VALUES ('Факультет інформатики та обчислювальної техніки', '2')
+
+
+INSERT INTO Occupations(NameOccupation, Staff) VALUES ('Професор', '1')
+INSERT INTO Occupations(NameOccupation, Staff) VALUES ('Доцент', '1')
+INSERT INTO Occupations(NameOccupation, Staff) VALUES ('Старший викладач', '2')
+INSERT INTO Occupations(NameOccupation, Staff) VALUES ('Методист', '1')
+INSERT INTO Occupations(NameOccupation, Staff) VALUES ('Бухгалтер', '2')
+*/
+INSERT INTO Employers(Surname, Firstname, Patronic, Sex, BirthDate, Registrtation, Department, Occupation, EntryDate)
+	VALUES ('Агеєнко', 'Віталій', 'Миколайович', 'M', '01.01.1999', 'Kyiv', '3', '1', '01.09.2018')
+INSERT INTO Employers(Surname, Firstname, Patronic, Sex, BirthDate, Registrtation, Department, Occupation, EntryDate)
+	VALUES ('Васько', 'Кирило', 'Вікторович', 'M', '03.05.2005', 'Kyiv', '4', '3', '05.09.2018')
+INSERT INTO Employers(Surname, Firstname, Patronic, Sex, BirthDate, Registrtation, Department, Occupation, EntryDate)
+	VALUES ('Вовчановський', 'Павло', 'Павлович', 'M', '12.05.1999', 'Kyiv', '5', '2', '05.09.2018')
+INSERT INTO Employers(Surname, Firstname, Patronic, Sex, BirthDate, Registrtation, Department, Occupation, EntryDate)
+	VALUES ('Войцеховський', 'Андрій', 'Валерійович', 'M', '12.04.1998', 'Kyiv', '4', '2', '05.09.2015')
+INSERT INTO Employers(Surname, Firstname, Patronic, Sex, BirthDate, Registrtation, Department, Occupation, EntryDate)
+	VALUES ('Лихошерст', 'Владислав', 'Романович', 'M', '11.04.1995', 'Kyiv', '3', '1', '12.07.2017')
+INSERT INTO Employers(Surname, Firstname, Patronic, Sex, BirthDate, Registrtation, Department, Occupation, EntryDate)
+	VALUES ('Лях', 'Дар"я', 'Олександрівна', 'F', '04.15.1995', 'Kyiv', '3', '2', '11.08.2017')
+INSERT INTO Employers(Surname, Firstname, Patronic, Sex, BirthDate, Registrtation, Department, Occupation, EntryDate)
+	VALUES ('Максимишин', 'Роман', 'Андрійович', 'M', '12.12.1991', 'Kyiv', '5', '3', '07.08.2017')
+INSERT INTO Employers(Surname, Firstname, Patronic, Sex, BirthDate, Registrtation, Department, Occupation, EntryDate)
+	VALUES ('Матрос', 'Кирило', 'Андрійович', 'M', '12.08.1991', 'Kyiv', '4', '4', '07.08.2012')
+INSERT INTO Employers(Surname, Firstname, Patronic, Sex, BirthDate, Registrtation, Department, Occupation, EntryDate)
+	VALUES ('Нікітін', 'Євгеній', 'Євгнійович', 'M', '08.12.1994', 'Kyiv', '5', '4', '12.05.2014')
+INSERT INTO Employers(Surname, Firstname, Patronic, Sex, BirthDate, Registrtation, Department, Occupation, EntryDate)
+	VALUES ('Распутний', 'Степан', 'Сергійович', 'M', '07.26.1994', 'Kyiv', '1', '4', '12.05.2014')
